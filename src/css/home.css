@@ -1,0 +1,50 @@
+.aboutSection {
+    margin-top: 3vw;
+}
+
+.aboutSection h1 {
+    margin-left: 10vw;
+    font-weight: 100;
+}
+
+.aboutSection p {
+    margin-left: 10vw;
+    width: 60%;
+}
+
+.aboutSection p img {
+    position: absolute;
+    right: 0;
+    width: 20vw;
+    margin-right: 10vw;
+}
+
+ul li {
+    margin-left: 10vw !important;
+    font-weight: normal;
+    line-height: 2vw;
+}
+ h1, h2, h3, p, div{
+    font-weight: lighter;
+    line-height: 2vw;
+ }
+
+.sermonsMainContainer{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 2.5vw;
+    min-height: 100vh; /* Added this line */
+}
+
+.sermonsContainer {
+    background-color:#1A1A1A;
+    min-height: 100vh; /* Added this line */
+}
+
+.search{
+    background-image: url('../images/search.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.5vw;
+    padding-left: 2.5vw;
+}

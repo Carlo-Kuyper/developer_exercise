@@ -1,0 +1,106 @@
+/* Carousel Styles */
+
+.d-flex {
+    display: flex;
+}
+
+.carousel-text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color:#03AFB1; 
+    color: white; 
+    padding: 1rem;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last value to change the darkness of the overlay */
+}
+
+.carouselCon{
+    height: 35vw;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+/* Cards Style */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.cards{
+    width:100%; 
+    margin-top: 1.5vw;
+    /* margin-right: 5%; */
+    box-shadow: 2px 2px 2px rgb(17, 17, 17);
+}
+
+.cardImg{
+    width:100%;
+}
+
+.error-image {
+    height:6.5vw;
+    object-fit: scale-down;
+}
+
+/* Audio Player */
+.audioCon{
+    width: 100%;
+    margin-top: 2vw;
+}
+
+#rm-audio-player{
+    --rm-audio-player-track-current-time:#03AFB1;
+    --rm-audio-player-progress-bar:#03AFB1;
+  }
+
+/* Pages Style */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.pageNumbers{
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+
+.pageNumbers:hover{
+    margin-bottom: 2vw;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.active {
+    color: #03AFB1;
+    font-weight: bold;
+  }
